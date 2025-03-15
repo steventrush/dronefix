@@ -8,18 +8,19 @@
 </head>
 <body>
     <div class="container">
-        <h1<img src="car.jpeg" alt="A car" width="300">/h1>
-        <button id="openButton">fix drone!</button>
+        <h1>Steven's Drone Fix</h1>
+        <button id="openButton">Fix Drone!</button>
         
-        <!-- Hidden content -->
+        <!-- Hidden content (initially hidden) -->
         <div id="hiddenContent" style="display: none;">
-            <h2>??</h2>
-            <p>Are you ready to fix your drone!</p>
+            <h2>Ready to Fix Your Drone?</h2>
+            <p>Here’s an image of the part you might need:</p>
+            <img src="car.jpeg" alt="Car Image" width="300">
         </div>
     </div>
 
     <script>
-        // JavaScript to show the hidden content when the button is clicked
+        // JavaScript to toggle the visibility of the hidden content
         document.getElementById("openButton").onclick = function() {
             const hiddenContent = document.getElementById("hiddenContent");
             // Toggle the visibility of the hidden content
