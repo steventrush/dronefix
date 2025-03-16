@@ -1,8 +1,24 @@
+
+
 body {
+    background-image: url('drone'); /* Path to your image */
+    background-size: cover; /* Makes the image cover the entire page */
+    background-position: center; /* Centers the image */
+    background-repeat: repeat; /* Prevents repeating */
+    height: 100vh; /* Full height */
+    margin: 0; /* Removes default margin */
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    color: white; /* Makes text readable on dark images */
+}
+
+
+/* Content Styling */
+.content {
+    position: relative;
     text-align: center;
-    padding: 50px;
+    color: white;
+    padding-top: 50px;
+}
 }
 
 /* Styling for the container */
@@ -26,6 +42,35 @@ button {
     transition: background-color 0.3s ease;
 }
 
+/* Styling for the button */
+button2 {
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+
+/* Styling for the button */
+button3 {
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
 /* Change button color when hovering */
 button:hover {
     background-color: #45a049;
@@ -33,7 +78,35 @@ button:hover {
 
 /* Styling for the hidden content */
 #hiddenContent {
-    background-color: #e7f9e7;
+    background-color:#056099;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+/* Styling for the hidden content1 */
+#hiddenContent1 {
+    background-color:#056099;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} 
+
+
+
+
+
+
+/* Styling for the hidden content2 */
+#hiddenContent2 {
+    background-color:#056099;
     padding: 20px;
     border-radius: 10px;
     margin-top: 20px;

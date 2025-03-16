@@ -9,26 +9,61 @@
 <body>
     <div class="container">
         <h1>Steven's Drone Fix</h1>
-        <button id="openButton">Fix Drone!</button>
-        
-        <!-- Hidden content (initially hidden) -->
+
+        <!-- Three buttons -->
+        <button id="openButton">Fix your DJI Mini 3 and Mini 3 Pro drones today!</button>
+        <button id="openButton2">See More Fixes</button>
+        <button id="openButton3">Contact us</button>
+
+
+        <!-- Hidden content for first button -->
         <div id="hiddenContent" style="display: none;">
             <h2>Ready to Fix Your Drone?</h2>
-            <p>Here’s an image of the part you might need:</p>
-            <img src="car.jpeg" alt="Car Image" width="300">
+            <p>Here are things we fix.</p>
+            <p>Stuck Gimbals ($40)</p>
+            <p>Camera issues ($30-$150)</p>
+            <p>Motor issues ($50)</p>
+            <p>Broken core parts ($40)</p>
+            <p>Broken cameras ($150-$170)</p>
+        </div>
+
+        <!-- Hidden content for second button -->
+        <div id="hiddenContent1" style="display: none;">
+            <h2>Additional Fixes</h2>
+            <p>Battery replacements ($60)</p>
+            <p>Frame repairs ($50)</p>
+            <p>Firmware updates ($20)</p>
+        </div>
+        
+        <!-- Hidden content for second button -->
+        <div id="hiddenContent2" style="display: none;">
+            <h2>Contact Us</h2>
+            <p>Email us at trusteven1@gmail.com</p>
         </div>
     </div>
 
+    <!-- JavaScript for first button -->
     <script>
-        // JavaScript to toggle the visibility of the hidden content
         document.getElementById("openButton").onclick = function() {
             const hiddenContent = document.getElementById("hiddenContent");
-            // Toggle the visibility of the hidden content
-            if (hiddenContent.style.display === "none") {
-                hiddenContent.style.display = "block";
-            } else {
-                hiddenContent.style.display = "none";
-            }
+            hiddenContent.style.display = (hiddenContent.style.display === "none") ? "block" : "none";
+        };
+    </script>
+
+    <!-- JavaScript for second button -->
+    <script>
+        document.getElementById("openButton2").onclick = function() {
+            const hiddenContent1 = document.getElementById("hiddenContent1");
+            hiddenContent1.style.display = (hiddenContent1.style.display === "none") ? "block" : "none";
+        };
+    </script>
+
+
+    <!-- JavaScript for third button -->
+    <script>
+        document.getElementById("openButton3").onclick = function() {
+            const hiddenContent1 = document.getElementById("hiddenContent2");
+            hiddenContent1.style.display = (hiddenContent1.style.display === "none") ? "block" : "none";
         };
     </script>
 </body>
